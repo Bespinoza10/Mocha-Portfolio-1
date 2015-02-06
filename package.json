@@ -1,0 +1,33 @@
+{
+  "name": "Mocha-Portfolio-1",
+  "version": "1.0.0",
+  "description": "This is an app demonstrating testing front-end JavaScript with Mocha and Chai",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bespinoza10/Mocha-Portfolio-1.git"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^2.1.0",
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "^1.9.15"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bespinoza10/Mocha-Portfolio-1/issues"
+  },
+  "homepage": "https://github.com/Bespinoza10/Mocha-Portfolio-1"
+}

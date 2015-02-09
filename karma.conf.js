@@ -19,7 +19,6 @@ module.exports = function(config) {
       'test/spec/*.test.js',
       'bower_components/jquery/dist/jquery.min.js',
       'bower_components/lodash/lodash.min.js',
-      'bower_components/async/dist/async.min.js',
       'bower_components/async/lib/async.js'
     ],
 
@@ -32,13 +31,19 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'public/js/**/*.js':['coverage']
+    },
+
+    coverageReporter:{
+      type: 'lcov',
+      dir: 'coverage/'
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage', 'coveralls'],
 
 
     // web server port
